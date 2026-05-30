@@ -1,6 +1,6 @@
-# Dustin Stephens — Personal Website
+# Dustin J. Stephens — Personal Website
 
-This is a static website (HTML/CSS/JS) and is ready for GitHub Pages.
+Static portfolio site (HTML/CSS/JS) for recruiters and professional networking. Includes resume download (`Dustin_J_Stephens_Resume.pdf`), experience aligned with the latest resume, and GitHub Pages deployment.
 
 ## Quick host setup
 

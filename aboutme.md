@@ -1,19 +1,17 @@
 About Me
 
-At the center of everything I do is my family. They are my foundation and my motivation—the reason I push myself to grow, to learn, and to build things that matter. Whether I’m leading a team, exploring new technologies, or heading outdoors with a camera in hand, my work is ultimately about creating a better life and a meaningful example for them.
+My family is the reason I keep pushing myself to grow, learn, and build a better life. A lot of what drives me professionally comes back to that. I want my kids to see me stay curious, work hard, and keep learning new things.
 
-I’ve always loved technology. Long before it became a career, it was curiosity — taking things apart, understanding systems, and wanting to know how everything connects. GIS became my professional entry point, but it has never been the boundary of my interests.
+I’ve always been interested in technology. Before it was part of my career, it was just something I liked figuring out. I wanted to understand how things worked, how systems connected, and how tools could be used to solve real problems.
 
-Growing up, I was influenced by two worlds: computers and land. I loved tech, but I also spent time surveying with my father as a teenager. That experience grounded my interest in real-world systems and measurement, and it naturally led me into GIS — where physical space and digital systems intersect.
+I also grew up around land and surveying. As a teenager, I spent time surveying with my father, and that experience stuck with me. Looking back, GIS made a lot of sense as a career path. It brought together two things I was already drawn to: technology and the real world around us.
 
-I built my career in the utility sector, developing strong foundations in spatial data management, systems thinking, and operational problem solving. More recently, my work has expanded into forestry, where environmental systems, long-term planning, and geospatial intelligence come together in meaningful ways. Along the way, I’ve developed a deep appreciation for open-source GIS tools — not just for cost savings, but for the flexibility and creativity they unlock.
+Most of my career has been in utilities, where GIS is not just mapping. It is data, infrastructure, operations, field work, problem solving, and communication. More recently, I’ve worked in forestry, where geospatial tools support land management, long-term planning, and environmental decision-making.
 
-But my interests extend well beyond GIS. I’m deeply engaged in the broader world of technology — particularly AI, automation, and agentic coding. I’ve spent significant time exploring how intelligent systems can augment human decision-making and transform workflows. What started as curiosity has become serious exploration, and I’m actively building, testing, and learning in this space.
+GIS is where my career started, but it is not where my interests stop. I spend a lot of time learning about AI, automation, Python, web development, and agentic coding. I’m especially interested in how these tools can reduce repetitive work, improve workflows, and help people make better decisions.
 
-Leadership is also a defining part of who I am. I lead a team, and I care deeply about creating an environment where people grow. I enjoy challenging my team to think differently, especially when it comes to adopting new technologies like AI. To me, leadership is about building momentum — helping others move forward with clarity and confidence.
+I also lead a team, and that is an important part of who I am professionally. I care about helping people grow, encouraging curiosity, and finding better ways to work. I like pushing my team to try new tools and think differently, especially as AI starts changing how technical work gets done.
 
-Creativity ties it all together. Whether I’m exploring nature or capturing photography, I value perspective and thoughtful observation. Creativity isn’t separate from my technical work — it fuels it. It shapes how I approach problems, build systems, and imagine what’s possible.
+Outside of work, I enjoy being outdoors, photography, drone work, and creative projects. Those interests might seem separate from my technical work, but they really are not. They all come from the same place: curiosity, observation, and wanting to build something useful or meaningful.
 
-At my core, I’m a builder — of systems, of ideas, of teams, and of creative work. GIS was the beginning of that journey — not the limit of it.
-
-And I’m still just getting started.
+At my core, I’m a builder. I like building systems, workflows, tools, teams, and ideas. GIS was the starting point, but I’m always looking for what comes next.

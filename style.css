@@ -444,6 +444,19 @@ nav.scrolled {
   font-size: 0.85em;
 }
 
+/* ━━━━━ ABOUT BODY ━━━━━ */
+.about-body {
+  max-width: 680px;
+  margin: 0 auto;
+}
+.about-body p {
+  color: var(--steel);
+  font-size: 0.92rem;
+  line-height: 1.9;
+  margin-bottom: 1.75rem;
+}
+.about-body p:last-child { margin-bottom: 0; }
+
 /* ━━━━━ STORY GRID ━━━━━ */
 .story {
   display: grid;
@@ -634,6 +647,67 @@ nav.scrolled {
   width: 3px; height: 3px; border-radius: 50%;
   background: var(--stone);
 }
+
+/* ━━━━━ SKILLS GRID ━━━━━ */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+.skill-category {
+  background: var(--white);
+  padding: 1.75rem 1.5rem;
+  border: 1px solid var(--border-light);
+  transition: border-color 0.3s;
+}
+.skill-category:hover { border-color: var(--gold); }
+.skill-category h4 {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+.skill-category p {
+  font-size: 0.84rem;
+  color: var(--steel);
+  line-height: 1.75;
+}
+
+/* ━━━━━ CONTACT SINGLE ━━━━━ */
+.contact-single {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.contact-lead {
+  text-align: center;
+  color: var(--steel);
+  font-size: 0.92rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+.contact-cards .ci {
+  margin-bottom: 1.5rem;
+}
+
+/* ━━━━━ FOOTER SOCIAL ━━━━━ */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.footer-social a {
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+.footer-social a:hover { color: var(--gold); }
 
 /* ━━━━━ SKILLS ━━━━━ */
 .skills-cols {
