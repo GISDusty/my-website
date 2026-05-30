@@ -145,38 +145,69 @@ nav.scrolled {
   background: none;
   border: none;
   cursor: pointer;
-  width: 24px; height: 18px;
+  width: 44px;
+  height: 44px;
   position: relative;
+  z-index: 9020;
+  flex-shrink: 0;
   padding: 0;
+  margin: 0 -10px 0 0;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+.nav-toggle .nav-toggle-icon {
+  display: block;
+  width: 24px;
+  height: 18px;
+  position: relative;
 }
 .nav-toggle span {
   display: block; width: 100%; height: 1.5px;
   background: var(--white);
   position: absolute; left: 0;
   transition: transform 0.35s, opacity 0.35s;
+  pointer-events: none;
 }
-.nav-toggle span:nth-child(1) { top: 0; }
-.nav-toggle span:nth-child(2) { top: 50%; transform: translateY(-50%); }
-.nav-toggle span:nth-child(3) { bottom: 0; }
-.nav-toggle.open span:nth-child(1) { top: 50%; transform: translateY(-50%) rotate(45deg); }
-.nav-toggle.open span:nth-child(2) { opacity: 0; }
-.nav-toggle.open span:nth-child(3) { bottom: 50%; transform: translateY(50%) rotate(-45deg); }
+.nav-toggle-icon span:nth-child(1) { top: 0; }
+.nav-toggle-icon span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.nav-toggle-icon span:nth-child(3) { bottom: 0; }
+.nav-toggle.open .nav-toggle-icon span:nth-child(1) { top: 50%; transform: translateY(-50%) rotate(45deg); }
+.nav-toggle.open .nav-toggle-icon span:nth-child(2) { opacity: 0; }
+.nav-toggle.open .nav-toggle-icon span:nth-child(3) { bottom: 50%; transform: translateY(50%) rotate(-45deg); }
+
+body.nav-open { overflow: hidden; }
 
 @media (max-width: 768px) {
   .nav-inner { padding: 0 1.5rem; }
-  .nav-toggle { display: block; }
+  .nav-toggle { display: flex; }
   .nav-links {
     position: fixed; top: 71px; left: 0; right: 0;
+    z-index: 9010;
     background: rgba(11,26,18,0.97);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     flex-direction: column; padding: 2.5rem 1.5rem; gap: 1.5rem;
-    transform: translateY(-110%); opacity: 0;
-    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.45s;
+    transform: translateY(-8px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.35s,
+                visibility 0.35s;
     border-bottom: 1px solid var(--border-dark);
   }
-  .nav-links.open { transform: translateY(0); opacity: 1; }
-  .nav-links a { font-size: 0.85rem; }
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .nav-links a {
+    font-size: 0.85rem;
+    padding: 0.35rem 0;
+  }
 }
 
 /* ━━━━━ HERO ━━━━━ */
@@ -260,7 +291,8 @@ nav.scrolled {
   .hero-text { text-align: center; order: 2; }
   .hero-media { order: 1; }
   .hero-photo { max-width: 280px; }
-  .hero-buttons { justify-content: center; }
+  .hero-text .hero-buttons { justify-content: center; }
+  .hero-text .hero-tagline::after { display: none; }
 }
 
 .hero h1 {
@@ -283,7 +315,9 @@ nav.scrolled {
 }
 .hero-text .hero-tagline::before { display: none; }
 .hero-text .hero-tagline::after { content: ''; display: inline-block; width: 40px; height: 1px; background: var(--gold); opacity: 0.4; vertical-align: middle; margin-left: 1rem; }
-.hero-text .hero-buttons { justify-content: flex-start; }
+@media (min-width: 901px) {
+  .hero-text .hero-buttons { justify-content: flex-start; }
+}
 
 .hero-tagline::before,
 .hero-tagline::after {
@@ -794,7 +828,52 @@ nav.scrolled {
   display: flex;
   gap: 0.75rem;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+}
+
+/* ━━━━━ MOBILE POLISH ━━━━━ */
+@media (max-width: 768px) {
+  .hero {
+    padding: 7rem 1.5rem 4rem;
+    min-height: auto;
+  }
+  .hero-short {
+    padding-top: 7.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    min-height: 50vh;
+  }
+  .hero-sub {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+  .hero-buttons,
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-buttons .btn,
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .timeline {
+    padding-left: 2rem;
+  }
+  .tl-item::before {
+    left: -2.35rem;
+  }
+  .footer-links,
+  .footer-social {
+    flex-wrap: wrap;
+    gap: 1.25rem 2rem;
+  }
 }
 
 /* ━━━━━ CONTACT ━━━━━ */
