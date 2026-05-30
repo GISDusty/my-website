@@ -1,30 +1,10 @@
 # Dustin J. Stephens — Personal Website
 
-Static portfolio site (HTML/CSS/JS) for recruiters and professional networking. Includes resume download (`Dustin_J_Stephens_Resume.pdf`), experience aligned with the latest resume, and GitHub Pages deployment.
+Static portfolio site (HTML/CSS/JS) deployed via GitHub Pages.
 
-## Quick host setup
+## Local-only files
 
-1. Initialize a git repo (if you haven’t already):
-
-```bash
-git init
-git add .
-git commit -m "Initial site version"
-```
-
-2. Create a new GitHub repository on your account, then connect it:
-
-```bash
-git branch -M main
-git remote add origin git@github.com:YOUR_GITHUB_HANDLE/YOUR_REPO_NAME.git
-git push -u origin main
-```
-
-3. In GitHub, open `Settings > Pages` and set:
-
-- Source: `GitHub Actions`
-
-GitHub will run the workflow in `.github/workflows/pages.yml` automatically on each push to `main` and publish `index.html` and related files.
+Keep resumes, drafts, and screenshots out of the repo (see `.gitignore`). Store PDFs locally or share via email/LinkedIn when applying.
 
 ## Local preview
 
@@ -32,4 +12,10 @@ GitHub will run the workflow in `.github/workflows/pages.yml` automatically on e
 python -m http.server 8000
 ```
 
-Then open <http://localhost:8000>.
+Open <http://localhost:8000>.
+
+## Deploy
+
+Push to `main`. GitHub Actions (`.github/workflows/pages.yml`) publishes the site automatically.
+
+Site URL: <https://gisdusty.github.io/my-website/>

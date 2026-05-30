@@ -1,0 +1,14 @@
+# Private / local-only — do not commit
+*.pdf
+*.docx
+*.doc
+aboutme.md
+Screenshot*.png
+*_Resume*.pdf
+Manulife*
+
+# OS & editor
+.DS_Store
+Thumbs.db
+*.Zone.Identifier
+*:Zone.Identifier
