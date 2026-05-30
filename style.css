@@ -323,15 +323,6 @@ body.nav-open { overflow: hidden; }
   .hero-text .hero-buttons { justify-content: flex-start; }
 }
 
-.hero-tagline::before,
-.hero-tagline::after {
-  content: '\2014\00a0\00a0';
-  opacity: 0.4;
-}
-.hero-tagline::after {
-  content: '\00a0\00a0\2014';
-}
-
 .hero-sub {
   color: rgba(255,255,255,0.4);
   font-size: 1rem;
